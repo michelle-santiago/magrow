@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4F0"
+    tools:context="magrow.project.application.fragment.AddCrop">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_rounded_bg"></LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/crop_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="64dp"
+        android:src="@drawable/ricev2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/season_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="RECOMMENDED VARIETIES"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="RECOMMENDED VARIETIES"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/variety"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/other_variety"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/addcrop_edittext"
+                android:hint="Enter variety"
+                android:layout_marginBottom="@dimen/standard_10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#888888"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/crop_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/addcrop_edittext"
+                android:hint="Enter Crop name"
+                android:selectAllOnFocus="true"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#888888"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/season"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation='horizontal'
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/wet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Wet" />
+
+                <RadioButton
+                    android:id="@+id/dry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dry" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/add_crop"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/ic_add"
+            android:paddingLeft="20dp"
+            android:text="Add Crop"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

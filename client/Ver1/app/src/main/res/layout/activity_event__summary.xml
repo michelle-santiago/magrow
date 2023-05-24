@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4F0"
+    tools:context="magrow.project.application.Event_Summary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_arrow_back"/>
+            <TextView
+                android:id="@+id/task_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:text="Crop Operation"/>
+
+            <ImageView
+                android:id="@+id/ops_img"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1.8"
+                android:src="@drawable/mm1"/>
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:background="@drawable/weather_pane_rounded"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="SELECT ACTIVITY"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/landPrep"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/mm1" />
+
+                        <ImageButton
+                            android:id="@+id/crop"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/mm2" />
+
+                        <ImageButton
+                            android:id="@+id/care"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/mm3" />
+
+                        <ImageButton
+                            android:id="@+id/pest"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/mm4" />
+
+                        <ImageButton
+                            android:id="@+id/harvest"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/mm5" />
+
+                        <ImageButton
+                            android:id="@+id/others"
+                            style="?android:borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/mm6" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/weather_pane_rounded"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="40dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="DATE"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/addcrop_edittext"
+                        android:clickable="true"
+                        android:padding="15dp"
+                        android:text="2018-12-15"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="TIME"
+                        android:visibility="gone"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/addcrop_edittext"
+                        android:clickable="true"
+                        android:visibility="gone"
+                        android:padding="15dp"
+                        android:text="00:00:00"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="COLOR"
+                        android:visibility="gone"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/r1"
+                        android:layout_width="98dp"
+                        android:layout_height="33dp"
+                        android:visibility="gone"
+                        android:background="@android:drawable/editbox_background"
+                        android:clickable="true" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="ACTIVITY"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/desc2"
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/addcrop_edittext"
+                        android:hint="Enter activity name"
+                        android:inputType="textPersonName"
+                        android:padding="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="visible" />
+
+                    <Spinner
+                        android:id="@+id/desc_choice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="TYPE"
+                        android:visibility="gone"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+
+                        android:id="@+id/crop_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Rice"
+                            android:textColor="@color/colorPrimary" />
+
+                        <RadioButton
+                            android:id="@+id/onion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Onion"
+                            android:textColor="@color/colorPrimary" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="CROP"
+                        android:visibility="gone"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/crop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:visibility="gone"
+                        android:backgroundTint="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AMOUNT"/>
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:inputType="numberDecimal"
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/addcrop_edittext"
+                        android:clickable="true"
+                        android:text="0.00"
+                        android:layout_marginBottom="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/weather_pane_rounded"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="20dp">
+
+
+                    <Button
+
+                        android:id="@+id/save2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_pane"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="20dp"
+                        android:text="Update"
+                        android:textColor="#fff" />
+
+                    <Button
+
+                        android:id="@+id/del"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_pane_orange"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="20dp"
+                        android:text="delete"
+                        android:textColor="#fff" />
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

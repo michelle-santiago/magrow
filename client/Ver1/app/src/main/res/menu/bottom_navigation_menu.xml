@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:icon="@drawable/home_selector"
+        android:title="Home" />
+
+    <item android:id="@+id/nav_calendar"
+        android:icon="@drawable/calendar_selector"
+        android:title="Calendar" />
+
+    <item android:id="@+id/nav_crop"
+        android:icon="@drawable/crop_selector"
+        android:title="Crops" />
+
+    <item android:id="@+id/nav_others"
+        android:icon="@drawable/more_selector"
+        android:title="User" />
+
+    <item android:id="@+id/nav_archive"
+        android:icon="@drawable/archive_selector"
+        android:title="More" />
+
+</menu>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4F0"
+    tools:context="AddEventV2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_arrow_back"/>
+            <TextView
+                android:id="@+id/ops_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:text="Crop Operation"/>
+
+            <ImageView
+                android:id="@+id/ops_img"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1.8"
+                android:src="@drawable/mm1"/>
+        </LinearLayout>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="vertical"
+            android:background="@drawable/weather_pane_rounded"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="DATE"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="2018-12-15"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/addcrop_edittext"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIME"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/addcrop_edittext"
+                android:clickable="true"
+                android:text="00:00:00" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COLOR"/>
+
+            <TextView
+                android:id="@+id/r1"
+                android:layout_width="98dp"
+                android:layout_height="33dp"
+                android:background="@android:drawable/editbox_background"
+                android:clickable="true"/>
+
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITY"/>
+
+            <EditText
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/addcrop_edittext"
+                android:id="@+id/desc"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="Enter activity name"
+                android:inputType="textPersonName"
+                android:layout_width="207dp"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/desc_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TYPE"/>
+
+            <RadioGroup
+
+                android:id="@+id/crop_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Rice" />
+
+                <RadioButton
+                    android:id="@+id/onion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Onion" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CROP"/>
+
+            <Spinner
+                android:id="@+id/crop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/weather_pane_rounded">
+
+
+            <Button
+
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_pane_orange"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:layout_marginRight="5dp"
+                android:text="Cancel" />
+
+            <Button
+
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_pane"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:text="Save" />
+
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

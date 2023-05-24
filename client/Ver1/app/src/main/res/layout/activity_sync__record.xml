@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4F0"
+    tools:context="magrow.project.application.Sync_Record">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:padding="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="center"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAGROW"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="magrow.000webhostapp.com" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/standard_10"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="@dimen/standard_10"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1.8"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/standard_50"
+                android:layout_height="@dimen/standard_50"
+                android:tint="@color/colorPrimary"
+                android:padding="8dp"
+                android:src="@drawable/ic_share" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/standard_10"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/standard_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="Data Sharing"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/standard_5"
+                    android:id="@+id/privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:text="Not Set"/>
+
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/standard_10"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1.6"
+                android:layout_height="wrap_content">
+            <Button
+                android:drawableLeft="@drawable/ic_edit"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:id="@+id/edit"
+                android:text="Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="#fff"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+
+                >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="https://magrow.000webhostapp.com"
+                android:paddingLeft="15dp"
+
+                android:imeOptions="actionDone"
+                android:visibility="visible"
+                />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2.7"
+
+                >
+            <Button
+                android:id="@+id/copy"
+                android:background="@drawable/ic_copy2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2.7"
+
+
+                android:background="@drawable/rounded_edittext">
+            <Button
+
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_globe"
+                android:textColor="#fff"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:drawableLeft="@drawable/ic_sync"
+            android:id="@+id/syncToWeb"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#fff"
+            android:text="Sync Data to Web" />
+        <Button
+            android:drawableLeft="@drawable/ic_sync"
+            android:id="@+id/syncMobile"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#fff"
+            android:visibility="invisible"
+            android:text="Sync Web Data" />
+
+
+
+    </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="bottom"
+            />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

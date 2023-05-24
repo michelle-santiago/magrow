@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="Library">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/crop_type"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_reference"/>
+
+        <TextView
+            android:id="@+id/crop_variety"
+            android:layout_marginTop="@dimen/default_gap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="References"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/standard_10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Regional Field Office No. 02 Tuguegarao, Cagayan, Department of Agriculture Onion Production Guide"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="http://rfo02.da.gov.ph/?smd_process_download=1&amp;download_id=467"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bureau of Plant Industry, Department of Agriculture Onion Production Guide"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="http://bpi.da.gov.ph/bpi/images/Production_guide/pdf/PRODUCTIONGUIDE-ONION.pdf"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App for smart rice crop management now available"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="http://www.philrice.gov.ph/app-smart-rice-crop-management-now-available/"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Croptivity Scouting Solution Empowers Farms in the Battle Against Herbicide Resistance with Better Data Capture and Team Productivity"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://www.businesswire.com/news/home/20160516005371/en/Croptivity%E2%84%A2-Scouting-Solution-Empowers-Farms-Battle-Herbicide"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Development Of Mobile Based Agriculture Scheduling System For Farmers In Regional Language (Punjabi) Using Weather Conditions."
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="http://krishikosh.egranth.ac.in/bitstream/1/79557/1/M.Tech.%20Thesis.pdf"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Major Crops Statistics of the Philippines (2010-2014)"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://psa.gov.ph/sites/default/files/MajorCrops10-14.pdf"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended varieties, technologies for the rainy season "
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="http://www.philrice.gov.ph/recommended-varieties-technologies-rainy-season/"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agrikultura"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://www.pressreader.com/philippines/liwayway/20170220/281586650359067"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top 5 most popular rice varieties"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="http://www.philrice.gov.ph/top-5-popular-rice-varieties/"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cross platform mobile expert system for agriculture task scheduling. In 2016 International Conference on Computing, Communication and Automation (ICCCA) (pp. 835-840)"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://psa.gov.ph/sites/default/files/MajorCrops10-14.pdf"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comprehensive, multi-year study reconfirms AccuWeather's Superior Accuracy in global wind, precipitation and temperature forecasts"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://www.accuweather.com/en/weather-news/comprehensive-multi-year-study-reconfirms-accuweathers-superior-accuracy-in-global-wind-precipitation-and-temperature-forecasts/70005191"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AgriDOC app (1.3.0)"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://play.google.com/store/apps/details?id=ph.gov.philrice.Agridocapp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Binhing Palay (1.2.0) "
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://play.google.com/store/apps/details?id=ph.gov.philrice.binhi"
+                    />
+
+                <TextView
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="farm poster material"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/standard_50"
+                    android:layout_marginRight="@dimen/standard_50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C5C5C5"
+                    android:text="https://pngtree.com/element/down?id=MjMyMTUzMw==&amp;type=1"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/close"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/rounded_pane"
+                        android:text="Close"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="@dimen/default_gap"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>

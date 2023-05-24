@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4F0"
+    tools:context=".fragment.More">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/standard_20"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:padding="@dimen/standard_20"
+                android:id="@+id/archive1"
+                android:background="@drawable/rounded_top"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_archive"
+                android:tint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/archive2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_bottom"
+                android:text="archive" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:padding="@dimen/standard_20"
+                android:id="@+id/sync1"
+                android:background="@drawable/rounded_top"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_sync"
+                android:tint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/sync2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_bottom"
+                android:text="SYNC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/standard_10"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:padding="@dimen/standard_30"
+                android:id="@+id/about1"
+                android:background="@drawable/rounded_top"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_about"
+                android:tint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/about2"
+                android:background="@drawable/rounded_bottom"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

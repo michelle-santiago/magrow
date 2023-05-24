@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="magrow.project.application.MainActivity">
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+             android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:maxImageSize="50dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:maxImageSize="50dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:maxImageSize="50dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:maxImageSize="50dp" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:maxImageSize="50dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:maxImageSize="50dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mm1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            app:maxImageSize="50dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="#FA8000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.924" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/dialogwallpaper"
+                android:scaleType="fitXY" />
+
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="50dp"
+                android:paddingRight="10dp"
+                app:compactCalendarBackgroundColor="#E4E4F0"
+                app:compactCalendarCurrentDayBackgroundColor="@color/colorAccent"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorPrimary"
+                app:compactCalendarMultiEventIndicatorColor="#fff"
+                app:compactCalendarTargetHeight="360dp"
+                app:compactCalendarTextColor="#0E2000"
+                app:compactCalendarTextSize="14sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/monthName"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Hello"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_arrow"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintEnd_toStartOf="@+id/monthName"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/circle_arrow"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toEndOf="@+id/monthName"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Land Preparation  "
+            android:background="@drawable/rounded_pane"
+            android:padding="3dp"
+            android:textAlignment="textStart"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="566dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Crop Operation  "
+            android:background="@drawable/rounded_pane"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="566dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Water &amp; Maintenance  "
+            android:background="@drawable/rounded_pane"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="566dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/label4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Pest Control  "
+            android:background="@drawable/rounded_pane"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="566dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/label7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Fertilizer Application  "
+            android:textColor="#fff"
+            android:background="@drawable/rounded_pane"
+            android:padding="3dp"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="566dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/label5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Harvest Management  "
+            android:background="@drawable/rounded_pane"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="566dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/label6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_pane"
+            android:text="  Other  "
+            android:padding="3dp"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="197dp"
+            tools:layout_editor_absoluteY="566dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.915"
+            android:visibility="gone"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>

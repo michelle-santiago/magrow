@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <LinearLayout
+        android:id="@+id/contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_gap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/crop_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/default_gap"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:text="CROP ID VALUE" />
+
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ricev2"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginRight="@dimen/default_gap"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/edit_crop"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:src="@drawable/ic_edit"
+                android:background="@drawable/rounded_pane"
+
+                android:layout_marginRight="8dp"
+                android:text="Edit"/>
+
+            <ImageButton
+                android:id="@+id/archive_crop"
+                android:background="@drawable/rounded_pane_red"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/standard_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pane1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/default_gap"
+                android:textStyle="bold"
+                tools:text="Crop Name  :" />
+
+            <TextView
+                android:id="@+id/crop_name"
+                tools:text="Crop Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginRight="@dimen/default_gap" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pane2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_gap"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Variety          :" />
+
+            <TextView
+                android:id="@+id/crop_variety"
+                tools:text="Crop Variety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginRight="@dimen/default_gap" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_gap"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Status          :" />
+
+            <TextView
+                android:id="@+id/status_content"
+                tools:text="Completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/default_gap"
+                android:layout_marginRight="@dimen/default_gap" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/border_orange">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+                <Button
+
+                    android:id="@+id/crop_log"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFA8000"
+                    android:layout_height="match_parent"
+                    android:text=" to do"
+                    android:drawableLeft="@drawable/ic_log"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+                <Button
+                    android:drawableLeft="@drawable/ic_records3"
+                    android:id="@+id/harvest_log"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFA8000"
+                    android:layout_height="match_parent"
+                    android:text="Harvest"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+                <Button
+
+                    android:drawableLeft="@drawable/ic_receipt"
+                    android:id="@+id/record_log"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:textColor="#FFFA8000"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Costs"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

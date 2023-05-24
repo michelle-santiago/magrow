@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="magrow.project.application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Reference"></activity>
+        <activity android:name=".Library" />
+        <activity
+            android:name=".FarmDetails"
+            android:label="            Farm Details"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AddCrop2" />
+        <activity
+            android:name=".MyIntro"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WarningSched" />
+        <activity
+            android:name=".About"
+            android:label="About"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fragment.Archive" />
+        <activity android:name=".fragment.More" />
+        <activity android:name=".WeatherDetailsDialog2" />
+        <activity android:name=".fragment.Hour12Weather" />
+        <activity android:name=".fragment.Day5Weather" />
+        <activity
+            android:name=".Event_Summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Summary"
+            android:label="Costs of Crop Production"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Agronomics" />
+        <activity android:name=".LoginDialog" />
+        <activity android:name=".SeedMaturityDialog" />
+        <activity android:name=".fragment.ResetPassword" />
+        <activity android:name=".fragment.PasswordEnterKey" />
+        <activity android:name=".fragment.ForgotPassword" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".EditEvent" />
+        <activity android:name=".WarningDialog" />
+        <activity android:name=".Welcome_dialog" />
+        <activity android:name=".DeleteDialog" />
+        <activity android:name=".WeatherDetailsDialog" />
+        <activity
+            android:name=".Crop_log"
+            android:label="  To Do"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecordDetails"
+            android:label="Crop Production Record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageRecord"
+            android:label="Manage Record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sync_Record"
+            android:label="Sync Record"
+            android:screenOrientation="portrait" />
+        <activity android:name=".fragment.Profile" />
+        <activity android:name=".fragment.Weather_details" />
+        <activity android:name=".fragment.Event_pane" />
+        <activity android:name=".fragment.AddEvent" />
+        <activity android:name=".fragment.Crop_edit" />
+        <activity android:name=".fragment.Crop_pane" />
+        <activity
+            android:name=".fragment.AddCrop"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".fragment.Others"
+            android:label="Others" />
+        <activity
+            android:name=".fragment.Calendar_pane"
+            android:label="Calendar" />
+        <activity
+            android:name=".fragment.Weather"
+            android:label="Weather" />
+        <activity
+            android:name=".fragment.Crops"
+            android:label="Crops"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".fragment.Home"
+            android:label="Home" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:theme="@style/Theme.AppCompat" />
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

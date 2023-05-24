@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4F0"
+    tools:context="magrow.project.application.fragment.Crop_edit">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:layout_marginLeft="25dp"
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_rounded_bg"></LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_width="250dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="300dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="UPDATE"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:id="@+id/season_txt"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/crop_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:hint="Enter Crop name"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/addcrop_edittext"
+                android:textColorHint="#888888"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CROP TYPE"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+            <RadioGroup
+                android:id="@+id/crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation='horizontal'
+                >
+
+                <RadioButton
+                    android:id="@+id/rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Rice" />
+                <RadioButton
+                    android:id="@+id/onion"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Onion" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEASON"
+                android:layout_marginTop="@dimen/standard_15"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/season_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEASON"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/season"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation='horizontal'
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/wet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Wet" />
+
+                <RadioButton
+                    android:id="@+id/dry"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:text="Dry" />
+
+            </RadioGroup>
+            <TextView
+                android:layout_marginTop="@dimen/standard_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECOMMENDED VARIETIES"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+            <Spinner
+                android:backgroundTint="@color/colorAccent"
+                android:id="@+id/variety"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/other_variety"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Enter variety"
+                android:layout_weight="0.8"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:background="@drawable/addcrop_edittext"
+                android:textColorHint="#888888"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/update"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#fff"
+            android:text="Update Crop" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

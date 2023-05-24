@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locations">
+        <item>--Select Location--</item>
+        <item>ALIAGA</item>
+        <item>BONGABON</item>
+        <item>CABANATUAN CITY</item>
+        <item>CABIAO</item>
+        <item>CARRANGLAN</item>
+        <item>CUYAPO</item>
+        <item>GABALDON</item>
+        <item>GAPAN</item>
+        <item>GENERAL NATIVIDAD</item>
+        <item>GENERAL TINIO</item>
+        <item>GUIMBA</item>
+        <item>JAEN</item>
+        <item>LAUR</item>
+        <item>LICAB</item>
+        <item>LLANERA</item>
+        <item>LUPAO</item>
+        <item>MUÑOZ</item>
+        <item>NAMPICUAN</item>
+        <item>PALAYAN</item>
+        <item>PANTABANGAN</item>
+        <item>PEÑARANDA</item>
+        <item>QUEZON</item>
+        <item>RIZAL</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN ISIDRO</item>
+        <item>SAN JOSE CITY</item>
+        <item>SAN LEONARDO</item>
+        <item>SANTA ROSA</item>
+        <item>SANTO DOMINGO</item>
+        <item>TALAVERA</item>
+        <item>TALUGTUG</item>
+        <item>ZARAGOZA</item>
+
+
+
+    </string-array>
+
+
+    <string-array name="measurement">
+        <item>Ha</item>
+        <item>m²</item>
+    </string-array>
+
+    <string-array name="ap_measurement">
+        <item>Ha</item>
+        <item>m²</item>
+    </string-array>
+    <string-array name="yph_measurement">
+        <item>kg</item>
+        <item>ton</item>
+    </string-array>
+</resources>

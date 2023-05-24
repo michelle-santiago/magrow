@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="Library">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/crop_type"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_library"/>
+
+        <TextView
+            android:id="@+id/crop_variety"
+            android:layout_marginTop="@dimen/default_gap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Libraries &amp; API's"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/standard_10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ThreeTen Android Backport"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="com.jakewharton.threetenabp:threetenabp:1.1.1"
+            />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joda-Time"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="joda-time:joda-time:2.10.1"
+            />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spots progress dialog"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="com.github.d-max:spots-dialog:1.1@aar"
+            />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compact Calendar View"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="com.github.sundeepk:compact-calendar-view:3.0.0"
+            />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Intro"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="com.github.AppIntro:AppIntro:v4.2.3"
+            />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circle Image View"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="de.hdodenhof:circleimageview:3.0.0"
+            />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FloatingActionButton"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="com.getbase:floatingactionbutton:1.10.1"
+            />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accuweather API"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/standard_50"
+            android:layout_marginRight="@dimen/standard_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:text="http://www.accuweather.com"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/close"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_pane"
+                android:text="Close"
+                android:textColor="#fff"
+                android:layout_marginLeft="@dimen/default_gap"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>
